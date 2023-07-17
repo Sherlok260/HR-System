@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.1</version>
+        <version>3.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>uz.tuit</groupId>
@@ -76,6 +76,12 @@
             <artifactId>javaee-web-api</artifactId>
             <version>8.0.1</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springdoc</groupId>-->
+<!--            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>-->
+<!--            <version>2.0.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

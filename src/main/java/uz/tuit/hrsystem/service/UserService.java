@@ -276,11 +276,12 @@ public class UserService {
                }
             }
 
-            leaveRequestRepository.deleteById(leaveRequest.getId());
             employeeInfo.setLeaveRequestHistories(leaveRequestHistories);
             Employee employee = employeeRepository.findByUsername(emp_email).get();
+            employeeInfo.setLeaveRequest(null);
             employee.setInfo(employeeInfo);
             employeeRepository.save(employee);
+            leaveRequestRepository.deleteById(leaveRequest.getId());
             return new ApiResponse("success", true);
         } catch (Exception e) {
             e.printStackTrace();
